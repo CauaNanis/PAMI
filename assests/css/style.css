@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #0b090b;
+    --secondary-color: #d8dada;
+    --tertiary-color: #000000;
+    --quaternary-color: #000000;
+    --quinary-color: #000000;
+    --light-color: #f2f2f2;
+    --medium-color: #000000;
+    --dark-color: #141414;
+}
+
+.bg-custom {
+    background: var(--quaternary-color);
+    background: linear-gradient(90deg, var(--quaternary-color) 0%, var(--quinary-color) 26%, var(--primary-color) 56%, var(--quinary-color) 81%, var(--quaternary-color) 100%);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--light-color);
+}
