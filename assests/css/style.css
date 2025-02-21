@@ -18,3 +18,8 @@
 .nav-link {
     color: var(--light-color);
 }
+
+.carousel-item{
+    width: 1200px;
+    height: 800px;
+}
