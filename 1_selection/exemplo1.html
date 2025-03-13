@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+</head>
+<body>
+    
+    <button onClick="dizerOla()">Diga Olá!</button>
+    <button onClick="aplicarEstilo()">Aplicar Estilo</button>
+    <button onCLick="aumentarFonte()">Aumentar Fonte</button>
+    <button onClick="reduzirFonte()">Reduzir Fonte</button>
+    <button onClick="aplicarPurple()">Aplicar cor Purple</button>
+    <button onClick="aplicarRed()">Aplicar cor Red</button>
+    <button onClick="aplicarBlue()">Aplicar cor Blue</button>
+    <button onClick="aumentarMargens()">Aumentar Margens</button>
+    <button onClick="reduzirMargens()">Reduzir Margens</button>
+
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+        
+        let margin_size = 10;
+        let font_size = 12;
+        let titulo = document.querySelector('h1');
+
+        function aplicarPurple(){
+            titulo.style.color = 'purple';
+        }
+
+        function aplicarRed(){
+            titulo.style.color = 'red';
+        }
+
+        function aplicarBlue(){
+            titulo.style.color = 'blue';
+        }
+
+        function aumentarMargens(){
+            margin_size++;
+            marginSize();
+        }
+
+        function reduzirMargens(){
+            margin_size--;
+            marginSize();
+        }
+
+        function aumentarFonte(){
+            font_size++;
+            // titulo.style.fontSize = font_size + 'px';
+            aplicarSize(); 
+        }
+
+        function reduzirFonte(){
+            font_size--;
+            // titulo.style.fontSize = font_size + 'px';
+            aplicarSize();
+        }
+
+        function aplicarSize(){
+            titulo.style.fontSize = font_size + 'px';
+        }
+
+        function marginSize(){
+            titulo.style.margin = margin_size + 'px';
+        }
+
+        function dizerOla(){
+            alert('Olá!!!');
+        }
+
+        function aplicarEstilo(){
+            let titulo = document.querySelector('h1');
+            titulo.style.backgroundColor = 'purple';
+            titulo.style.fontSize = '64px';
+            titulo.style.fontFamily = 'Comic Sans MS';
+            titulo.style.marginTop = '100px';          
+        }
+        
+    </script>
+
+</body>
+</html>
