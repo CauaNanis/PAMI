@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto dos horrores</title>
+</head>
+<body>
+
+    <img src="./Interruptor ligado.png" id="interruptor" onclick="acionarInterruptor()">
+    <img src="./Lampada acesa.png" id="lampada" onclick="acionarInterruptor()">
+
+    <script>
+        let acionado = true;
+        
+        function acionarInterruptor() {
+            let lampada = document.querySelector('#lampada');
+            let interruptor = document.querySelector('#interruptor');
+            let body = document.querySelector('body');
+
+            if (acionado == true) {
+                interruptor.setAttribute('src', './Interruptor desligado.png'); 
+                lampada.setAttribute('src', './Lampada apagada.png'); 
+                body.style.background = 'url("memphis in night.jpg")';
+                body.style.backgroundColor = 'black';
+            } else {
+                interruptor.setAttribute('src', './Interruptor ligado.png'); 
+                lampada.setAttribute('src', './Lampada acesa.png'); 
+                body.style.backgroundColor = 'white';
+                body.style.background = 'url("memphis day.jpg")';
+            }
+            acionado = !acionado;
+
+        }
+
+    </script>
+
+</body>
+</html>
