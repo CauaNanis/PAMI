@@ -1,0 +1,19 @@
+<script>
+
+    let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    let num = 0;
+    let num2 = 0;
+
+    n.forEach(function(n) {
+
+        if (n != 0) {
+            num2++;
+        }else {
+            num++;
+        }
+
+    }); 
+
+    console.log(`Existem ${num} números iguais a zero e ${num2} números diferentes de 0`);
+
+</script>
