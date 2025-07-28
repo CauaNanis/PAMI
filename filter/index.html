@@ -1,0 +1,29 @@
+<script>
+
+    const veiculos = [
+        { nome: "Toyota Corolla", ano: 2025, preco: 85000, modelo: "XEi", tipoCombustivel: "Gasolina" },
+        { nome: "Honda Civic", ano: 2021, preco: 92000, modelo: "Touring", tipoCombustivel: "Flex" },
+        { nome: "Volkswagen Golf", ano: 2019, preco: 78000, modelo: "Comfortline", tipoCombustivel: "Gasolina" },
+        { nome: "Chevrolet Onix", ano: 2025, preco: 70000, modelo: "LT", tipoCombustivel: "Flex" },
+        { nome: "Fiat Argo", ano: 2021, preco: 68000, modelo: "Drive", tipoCombustivel: "Flex" },
+        { nome: "Renault Kwid", ano: 2020, preco: 45000, modelo: "Zen", tipoCombustivel: "Gasolina" },
+        { nome: "Ford Ka", ano: 2019, preco: 48000, modelo: "SE", tipoCombustivel: "Flex" },
+        { nome: "Hyundai HB20", ano: 2023, preco: 77000, modelo: "Vision", tipoCombustivel: "Flex" },
+        { nome: "Jeep Renegade", ano: 2022, preco: 112000, modelo: "Longitude", tipoCombustivel: "Diesel" },
+        { nome: "Nissan Kicks", ano: 2023, preco: 115000, modelo: "Advance", tipoCombustivel: "Gasolina" },
+        { nome: "Opala", ano: 1968, preco: 1000000, modelo: "Fodão", tipoCombustivel: "Gasolina" }
+    ];
+
+    let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano > 2000 && veiculo.ano <= 2024);
+    let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >= 2025);
+    let veiculos_classicos = veiculos.filter(veiculo => veiculo.ano <= 2000);
+    let veiculos_gasolina = veiculos.filter(veiculo => veiculo.tipoCombustivel === 'Gasolina');
+    let veiculos_baixo_valor = veiculos.filter(veiculo => veiculo.preco <= 20000);
+
+    console.log(veiculos_seminovos);
+    console.log(veiculos_novos);
+    console.log(veiculos_classicos);
+    console.log(veiculos_gasolina);
+    console.log(veiculos_baixo_valor);
+
+</script>
