@@ -17,4 +17,14 @@
     console.log(copiaVinculada);
     //Saída: [1, 2, 3]
 
+    //Passagem de parâmetro por spread
+    const numeros = [10, 20, 30];
+
+    function soma(a, b, c) {
+        return a + b + c;
+    }
+
+    console.log(soma(...numeros));
+    //Saída: 60
+
 </script>
